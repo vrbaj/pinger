@@ -24,21 +24,23 @@ def get_cluster_machines(cluster_name):
     """
     pass
 
-def add_cluster(cluster_name):
+def add_cluster(cluster_name, cluster_list):
     """
     This function checks if the cluster name already exists and if now adds new cluster name.
 
     :param cluster_name: the string representing the name of new cluster.
-    :return: True/False, based on the success of adding new cluster name.
+    :param cluster_list: the list of existing clusters.
+    :return: the cluster list.
     """
     pass
 
-def remove_cluster(cluster_name):
+def remove_cluster(cluster_name, cluster_list):
     """
     This function checks if the cluster name exists and then remove it.
 
     :param cluster_name: the string representing the name of cluster that should be removed.
-    :return: True/False, basedon the success of removing the cluster.
+    :param cluster_list: the list of cluster
+    :return: updated cluster_list
     """
     pass
 
@@ -56,14 +58,33 @@ def add_machine(cluster_name, machine_address):
 
 
 def remove_machine(cluster_name, machine_address):
+    """
+    This function removes the machine from the specified cluster.
+    :param cluster_name: the cluster name which the machine belongs to.
+    :param machine_address: the address of machine to be revomed from the cluster.
+    :return: True/False based on the success of the removal
+    """
     pass
 
 
 def perform_ping(cluster_name, machine_address):
+    """
+    This function perform the ping to the machine that is specified by the cluster name and machine address.
+
+    :param cluster_name: the name of the cluster
+    :param machine_address: the address of the machine that belong to the specified cluster
+    :return: the result of the ping
+    """
     pass
 
 
 def perform_cluster_ping(cluster_name):
+    """
+    This function performs the ping to all machines that belongs to cluster.
+
+    :param cluster_name: name of the cluster (string)
+    :return: return the list of ping results
+    """
     pass
 
 
